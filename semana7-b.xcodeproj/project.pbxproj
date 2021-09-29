@@ -13,6 +13,8 @@
 		B0D089412704E4C70012B274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D0893F2704E4C70012B274 /* Main.storyboard */; };
 		B0D089432704E4CB0012B274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D089422704E4CB0012B274 /* Assets.xcassets */; };
 		B0D089462704E4CB0012B274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D089442704E4CB0012B274 /* LaunchScreen.storyboard */; };
+		B0D0894E2704E9C60012B274 /* WhishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0894D2704E9C60012B274 /* WhishListViewController.swift */; };
+		B0D089502704F4520012B274 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0894F2704F4520012B274 /* InboxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B0D089422704E4CB0012B274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D089452704E4CB0012B274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0D089472704E4CB0012B274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D0894D2704E9C60012B274 /* WhishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhishListViewController.swift; sourceTree = "<group>"; };
+		B0D0894F2704F4520012B274 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B0D089422704E4CB0012B274 /* Assets.xcassets */,
 				B0D089442704E4CB0012B274 /* LaunchScreen.storyboard */,
 				B0D089472704E4CB0012B274 /* Info.plist */,
+				B0D0894D2704E9C60012B274 /* WhishListViewController.swift */,
+				B0D0894F2704F4520012B274 /* InboxViewController.swift */,
 			);
 			path = "semana7-b";
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0D089502704F4520012B274 /* InboxViewController.swift in Sources */,
 				B0D0893E2704E4C70012B274 /* ViewController.swift in Sources */,
 				B0D0893A2704E4C70012B274 /* AppDelegate.swift in Sources */,
+				B0D0894E2704E9C60012B274 /* WhishListViewController.swift in Sources */,
 				B0D0893C2704E4C70012B274 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
