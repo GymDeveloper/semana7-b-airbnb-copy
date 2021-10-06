@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B06E4D25270E232800648D8C /* ExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D24270E232800648D8C /* ExplorerViewController.swift */; };
+		B06E4D27270E238200648D8C /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D26270E238200648D8C /* ExploreTableViewCell.swift */; };
+		B06E4D29270E27C500648D8C /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D28270E27C500648D8C /* Place.swift */; };
+		B06E4D2B270E284C00648D8C /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D2A270E284C00648D8C /* VenueViewModel.swift */; };
+		B06E4D2D270E2F3F00648D8C /* ExploreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D2C270E2F3F00648D8C /* ExploreDetailViewController.swift */; };
 		B0D0893A2704E4C70012B274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D089392704E4C70012B274 /* AppDelegate.swift */; };
 		B0D0893C2704E4C70012B274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0893B2704E4C70012B274 /* SceneDelegate.swift */; };
 		B0D0893E2704E4C70012B274 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0893D2704E4C70012B274 /* ViewController.swift */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B06E4D24270E232800648D8C /* ExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewController.swift; sourceTree = "<group>"; };
+		B06E4D26270E238200648D8C /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
+		B06E4D28270E27C500648D8C /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		B06E4D2A270E284C00648D8C /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
+		B06E4D2C270E2F3F00648D8C /* ExploreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailViewController.swift; sourceTree = "<group>"; };
 		B0D089362704E4C70012B274 /* semana7-b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "semana7-b.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D089392704E4C70012B274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0D0893B2704E4C70012B274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +51,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B06E4D1E270E225800648D8C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B06E4D23270E228A00648D8C /* Cells */,
+				B06E4D22270E227D00648D8C /* Screens */,
+				B06E4D21270E226F00648D8C /* ViewModel */,
+				B06E4D20270E226800648D8C /* Model */,
+				B06E4D1F270E226000648D8C /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B06E4D1F270E226000648D8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0D0894F2704F4520012B274 /* InboxViewController.swift */,
+				B0D0894D2704E9C60012B274 /* WhishListViewController.swift */,
+				B0D0893D2704E4C70012B274 /* ViewController.swift */,
+				B06E4D24270E232800648D8C /* ExplorerViewController.swift */,
+				B06E4D2C270E2F3F00648D8C /* ExploreDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B06E4D20270E226800648D8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B06E4D28270E27C500648D8C /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B06E4D21270E226F00648D8C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B06E4D2A270E284C00648D8C /* VenueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B06E4D22270E227D00648D8C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B0D0893F2704E4C70012B274 /* Main.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B06E4D23270E228A00648D8C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B06E4D26270E238200648D8C /* ExploreTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B0D0892D2704E4C60012B274 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +126,12 @@
 		B0D089382704E4C70012B274 /* semana7-b */ = {
 			isa = PBXGroup;
 			children = (
+				B06E4D1E270E225800648D8C /* Main */,
 				B0D089392704E4C70012B274 /* AppDelegate.swift */,
 				B0D0893B2704E4C70012B274 /* SceneDelegate.swift */,
-				B0D0893D2704E4C70012B274 /* ViewController.swift */,
-				B0D0893F2704E4C70012B274 /* Main.storyboard */,
 				B0D089422704E4CB0012B274 /* Assets.xcassets */,
 				B0D089442704E4CB0012B274 /* LaunchScreen.storyboard */,
 				B0D089472704E4CB0012B274 /* Info.plist */,
-				B0D0894D2704E9C60012B274 /* WhishListViewController.swift */,
-				B0D0894F2704F4520012B274 /* InboxViewController.swift */,
 			);
 			path = "semana7-b";
 			sourceTree = "<group>";
@@ -144,10 +207,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D089502704F4520012B274 /* InboxViewController.swift in Sources */,
+				B06E4D25270E232800648D8C /* ExplorerViewController.swift in Sources */,
 				B0D0893E2704E4C70012B274 /* ViewController.swift in Sources */,
+				B06E4D2D270E2F3F00648D8C /* ExploreDetailViewController.swift in Sources */,
 				B0D0893A2704E4C70012B274 /* AppDelegate.swift in Sources */,
+				B06E4D27270E238200648D8C /* ExploreTableViewCell.swift in Sources */,
 				B0D0894E2704E9C60012B274 /* WhishListViewController.swift in Sources */,
 				B0D0893C2704E4C70012B274 /* SceneDelegate.swift in Sources */,
+				B06E4D2B270E284C00648D8C /* VenueViewModel.swift in Sources */,
+				B06E4D29270E27C500648D8C /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
