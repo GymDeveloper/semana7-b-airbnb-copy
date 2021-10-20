@@ -12,7 +12,7 @@
         <!--Profile-->
         <scene sceneID="EMG-vW-rel">
             <objects>
-                <viewController id="kh1-NO-sRO" sceneMemberID="viewController">
+                <viewController id="kh1-NO-sRO" customClass="ProfileViewController" customModule="semana7_b" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mf8-SZ-jgl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,20 +23,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNz-r5-jCk">
+                                <rect key="frame" x="167.5" y="748" width="79.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Logout">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="1" green="0.35294117650000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickLogout:" destination="kh1-NO-sRO" eventType="touchUpInside" id="Ga7-tc-acq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roG-rF-0Xl">
+                                <rect key="frame" x="20" y="148" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lqm-Vw-Jzt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iNz-r5-jCk" firstAttribute="centerX" secondItem="mf8-SZ-jgl" secondAttribute="centerX" id="49N-4U-cPP"/>
                             <constraint firstItem="BwR-lx-Z9e" firstAttribute="leading" secondItem="Lqm-Vw-Jzt" secondAttribute="leading" constant="20" id="5HY-GH-yY5"/>
+                            <constraint firstItem="roG-rF-0Xl" firstAttribute="leading" secondItem="Lqm-Vw-Jzt" secondAttribute="leading" constant="20" id="6ph-tM-xJk"/>
+                            <constraint firstItem="Lqm-Vw-Jzt" firstAttribute="trailing" secondItem="roG-rF-0Xl" secondAttribute="trailing" constant="20" id="JpO-C2-uzA"/>
+                            <constraint firstItem="Lqm-Vw-Jzt" firstAttribute="bottom" secondItem="iNz-r5-jCk" secondAttribute="bottom" constant="30" id="V8P-C6-zIL"/>
                             <constraint firstItem="Lqm-Vw-Jzt" firstAttribute="trailing" secondItem="BwR-lx-Z9e" secondAttribute="trailing" constant="20" id="iHF-2D-qmL"/>
                             <constraint firstItem="BwR-lx-Z9e" firstAttribute="top" secondItem="Lqm-Vw-Jzt" secondAttribute="top" constant="30" id="jwI-U3-QhH"/>
+                            <constraint firstItem="roG-rF-0Xl" firstAttribute="top" secondItem="BwR-lx-Z9e" secondAttribute="bottom" constant="40" id="y8E-5W-MYp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="CAP-Zh-ATy"/>
+                    <connections>
+                        <outlet property="lblEmail" destination="roG-rF-0Xl" id="3uH-qj-JpL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6R-HS-oC6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="950"/>
+            <point key="canvasLocation" x="202.89855072463769" y="949.55357142857133"/>
         </scene>
         <!--Inbox-->
         <scene sceneID="bFM-5I-GA4">
