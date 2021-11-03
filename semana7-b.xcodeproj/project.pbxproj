@@ -17,13 +17,17 @@
 		B06E4D29270E27C500648D8C /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D28270E27C500648D8C /* Place.swift */; };
 		B06E4D2B270E284C00648D8C /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D2A270E284C00648D8C /* VenueViewModel.swift */; };
 		B06E4D2D270E2F3F00648D8C /* ExploreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4D2C270E2F3F00648D8C /* ExploreDetailViewController.swift */; };
+		B0C38ED4273314060083A771 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C38ED3273314060083A771 /* HeartButton.swift */; };
+		B0C38ED627331A510083A771 /* Wish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C38ED527331A510083A771 /* Wish.swift */; };
+		B0C38ED827331D150083A771 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C38ED727331D150083A771 /* Util.swift */; };
+		B0C522E72729D5300038CF3B /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C522E62729D5300038CF3B /* TripsViewController.swift */; };
 		B0D0893A2704E4C70012B274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D089392704E4C70012B274 /* AppDelegate.swift */; };
 		B0D0893C2704E4C70012B274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0893B2704E4C70012B274 /* SceneDelegate.swift */; };
 		B0D0893E2704E4C70012B274 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0893D2704E4C70012B274 /* ViewController.swift */; };
 		B0D089412704E4C70012B274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D0893F2704E4C70012B274 /* Main.storyboard */; };
 		B0D089432704E4CB0012B274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D089422704E4CB0012B274 /* Assets.xcassets */; };
 		B0D089462704E4CB0012B274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D089442704E4CB0012B274 /* LaunchScreen.storyboard */; };
-		B0D0894E2704E9C60012B274 /* WhishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0894D2704E9C60012B274 /* WhishListViewController.swift */; };
+		B0D0894E2704E9C60012B274 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0894D2704E9C60012B274 /* WishListViewController.swift */; };
 		B0D089502704F4520012B274 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0894F2704F4520012B274 /* InboxViewController.swift */; };
 		B0E355F827175C5000CFE44F /* ExploreDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E355F727175C5000CFE44F /* ExploreDetail.storyboard */; };
 		B0E355FA2717634600CFE44F /* CheckDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E355F92717634600CFE44F /* CheckDateViewController.swift */; };
@@ -41,6 +45,10 @@
 		B06E4D28270E27C500648D8C /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B06E4D2A270E284C00648D8C /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
 		B06E4D2C270E2F3F00648D8C /* ExploreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailViewController.swift; sourceTree = "<group>"; };
+		B0C38ED3273314060083A771 /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
+		B0C38ED527331A510083A771 /* Wish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wish.swift; sourceTree = "<group>"; };
+		B0C38ED727331D150083A771 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B0C522E62729D5300038CF3B /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		B0D089362704E4C70012B274 /* semana7-b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "semana7-b.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D089392704E4C70012B274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0D0893B2704E4C70012B274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +57,7 @@
 		B0D089422704E4CB0012B274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D089452704E4CB0012B274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0D089472704E4CB0012B274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0D0894D2704E9C60012B274 /* WhishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhishListViewController.swift; sourceTree = "<group>"; };
+		B0D0894D2704E9C60012B274 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		B0D0894F2704F4520012B274 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		B0E355F727175C5000CFE44F /* ExploreDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreDetail.storyboard; sourceTree = "<group>"; };
 		B0E355F92717634600CFE44F /* CheckDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDateViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +87,7 @@
 		B06E4D1E270E225800648D8C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B0C38ED2273313F40083A771 /* Utils */,
 				B06E4D23270E228A00648D8C /* Cells */,
 				B06E4D22270E227D00648D8C /* Screens */,
 				B06E4D21270E226F00648D8C /* ViewModel */,
@@ -92,13 +101,14 @@
 			isa = PBXGroup;
 			children = (
 				B0D0894F2704F4520012B274 /* InboxViewController.swift */,
-				B0D0894D2704E9C60012B274 /* WhishListViewController.swift */,
+				B0D0894D2704E9C60012B274 /* WishListViewController.swift */,
 				B0D0893D2704E4C70012B274 /* ViewController.swift */,
 				B06E4D24270E232800648D8C /* ExplorerViewController.swift */,
 				B06E4D2C270E2F3F00648D8C /* ExploreDetailViewController.swift */,
 				B0E355F92717634600CFE44F /* CheckDateViewController.swift */,
 				B0163DF727209E7600672662 /* LoginViewController.swift */,
 				B0163DF92720A55F00672662 /* ProfileViewController.swift */,
+				B0C522E62729D5300038CF3B /* TripsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				B06E4D28270E27C500648D8C /* Place.swift */,
+				B0C38ED527331A510083A771 /* Wish.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +146,15 @@
 				B06E4D26270E238200648D8C /* ExploreTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B0C38ED2273313F40083A771 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B0C38ED3273314060083A771 /* HeartButton.swift */,
+				B0C38ED727331D150083A771 /* Util.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B0D0892D2704E4C60012B274 = {
@@ -295,15 +315,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C38ED627331A510083A771 /* Wish.swift in Sources */,
 				B0163DF827209E7600672662 /* LoginViewController.swift in Sources */,
 				B0E355FA2717634600CFE44F /* CheckDateViewController.swift in Sources */,
 				B0D089502704F4520012B274 /* InboxViewController.swift in Sources */,
 				B06E4D25270E232800648D8C /* ExplorerViewController.swift in Sources */,
 				B0D0893E2704E4C70012B274 /* ViewController.swift in Sources */,
+				B0C38ED827331D150083A771 /* Util.swift in Sources */,
+				B0C38ED4273314060083A771 /* HeartButton.swift in Sources */,
 				B06E4D2D270E2F3F00648D8C /* ExploreDetailViewController.swift in Sources */,
 				B0D0893A2704E4C70012B274 /* AppDelegate.swift in Sources */,
+				B0C522E72729D5300038CF3B /* TripsViewController.swift in Sources */,
 				B06E4D27270E238200648D8C /* ExploreTableViewCell.swift in Sources */,
-				B0D0894E2704E9C60012B274 /* WhishListViewController.swift in Sources */,
+				B0D0894E2704E9C60012B274 /* WishListViewController.swift in Sources */,
 				B0D0893C2704E4C70012B274 /* SceneDelegate.swift in Sources */,
 				B0163DFA2720A55F00672662 /* ProfileViewController.swift in Sources */,
 				B06E4D2B270E284C00648D8C /* VenueViewModel.swift in Sources */,

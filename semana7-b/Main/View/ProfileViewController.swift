@@ -17,7 +17,7 @@ class ProfileViewController: UIViewController {
         setUpView()
     }
     
-//    vamos a recuperar al usuario de session y extraer sus datos
+//  vamos a recuperar al usuario de session y extraer sus datos
     func setUpView() {
         let user = Auth.auth().currentUser
         

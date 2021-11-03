@@ -14,5 +14,7 @@ class Place: Codable {
     let rating: Float
     let userRatingsTotal: Int
     let photo: String
+    let latitude: String
+    let longitude: String
     let id: String
 }

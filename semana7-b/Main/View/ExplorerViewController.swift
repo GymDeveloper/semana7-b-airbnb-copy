@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class ExplorerViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class ExplorerViewController: UIViewController {
     var userRatingsTotal: String? = nil
     var photo: String? = nil
     
+//    var shouldAnimate = true
+    
     let venueViewModel = VenueViewModel()
     
     override func viewDidLoad() {
@@ -25,7 +28,13 @@ class ExplorerViewController: UIViewController {
         bind()
         setUpTable()
     }
-    
+//
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        tableView.isSkeletonable = true
+//        tableView.showSkeleton()
+//    }
+//
     func setUpTable() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -38,8 +47,14 @@ class ExplorerViewController: UIViewController {
     func bind() {
         venueViewModel.refreshData = { [weak self] () in
             DispatchQueue.main.async {
+//                self?.shouldAnimate = false
                 self?.tableView.reloadData()
             }
+            
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+//                self?.shouldAnimate = false
+//                self?.tableView.reloadData()
+//            })
         }
     }
 
@@ -50,6 +65,14 @@ extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return venueViewModel.arrayVenues.count
     }
+    
+//    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return venueViewModel.arrayVenues.count
+//    }
+//
+//    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+//        return "cellExplorer"
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // aca vamos a vincular nuestra celda con el archivo tableViewCell
@@ -62,18 +85,18 @@ extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
         cell.lblRating.text = String(object.rating)
         cell.lblCountRating.text = "(\(object.userRatingsTotal))"
         
-        let urlImage = URL(string: object.photo)
-        
-        let data = try? Data(contentsOf: urlImage!)
-        
-        if let imageData = data {
-            cell.explorImage.image = UIImage(data: imageData)
-        }
+        setUpImage(photo: object.photo, image: cell.explorImage)
         
         let cellView = UIView()
         cellView.backgroundColor = UIColor.systemBackground
         cell.selectedBackgroundView = cellView
         
+//        if !shouldAnimate {
+////            cell.hideSkeleton()
+//            tableView.stopSkeletonAnimation()
+//            view.hideSkeleton()
+//        }
+//
         return cell
     }
     
