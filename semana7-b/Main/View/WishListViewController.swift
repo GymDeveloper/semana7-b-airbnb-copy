@@ -97,7 +97,7 @@ extension WishListViewController:  UITableViewDelegate, SkeletonTableViewDataSou
         
         cell.textLabel?.text = object.name
         cell.detailTextLabel?.text = object.address
-        
+        cell.imageView?.isSkeletonable = true
         // vamos a dar forma a las fotos
         cell.imageView?.layer.cornerRadius = 8.0
         cell.imageView?.layer.masksToBounds = true

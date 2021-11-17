@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67FDF77B7700D4F4F7DB0043 /* Pods_semana7_b.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F267CB36A87A1D9706ED1E51 /* Pods_semana7_b.framework */; };
+		B0136BD4274581970077356E /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0136BD3274581970077356E /* EditProfile.storyboard */; };
+		B0136BD6274588110077356E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0136BD5274588110077356E /* EditProfileViewController.swift */; };
 		B0163DF42720959A00672662 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0163DF32720959A00672662 /* GoogleService-Info.plist */; };
 		B0163DF627209A1D00672662 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0163DF527209A1D00672662 /* Login.storyboard */; };
 		B0163DF827209E7600672662 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0163DF727209E7600672662 /* LoginViewController.swift */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		2D9E18A2D4B77B7249DA615C /* Pods-semana7-b.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-semana7-b.release.xcconfig"; path = "Target Support Files/Pods-semana7-b/Pods-semana7-b.release.xcconfig"; sourceTree = "<group>"; };
 		2E44C86E2EA2D714E918F94F /* Pods-semana7-b.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-semana7-b.debug.xcconfig"; path = "Target Support Files/Pods-semana7-b/Pods-semana7-b.debug.xcconfig"; sourceTree = "<group>"; };
+		B0136BD3274581970077356E /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
+		B0136BD5274588110077356E /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		B0163DF32720959A00672662 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B0163DF527209A1D00672662 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B0163DF727209E7600672662 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				B0163DF727209E7600672662 /* LoginViewController.swift */,
 				B0163DF92720A55F00672662 /* ProfileViewController.swift */,
 				B0C522E62729D5300038CF3B /* TripsViewController.swift */,
+				B0136BD5274588110077356E /* EditProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				B0D0893F2704E4C70012B274 /* Main.storyboard */,
 				B0E355F727175C5000CFE44F /* ExploreDetail.storyboard */,
 				B0163DF527209A1D00672662 /* Login.storyboard */,
+				B0136BD3274581970077356E /* EditProfile.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D089462704E4CB0012B274 /* LaunchScreen.storyboard in Resources */,
+				B0136BD4274581970077356E /* EditProfile.storyboard in Resources */,
 				B0E355F827175C5000CFE44F /* ExploreDetail.storyboard in Resources */,
 				B0163DF627209A1D00672662 /* Login.storyboard in Resources */,
 				B0D089432704E4CB0012B274 /* Assets.xcassets in Resources */,
@@ -323,6 +330,7 @@
 				B0D0893E2704E4C70012B274 /* ViewController.swift in Sources */,
 				B0C38ED827331D150083A771 /* Util.swift in Sources */,
 				B0C38ED4273314060083A771 /* HeartButton.swift in Sources */,
+				B0136BD6274588110077356E /* EditProfileViewController.swift in Sources */,
 				B06E4D2D270E2F3F00648D8C /* ExploreDetailViewController.swift in Sources */,
 				B0D0893A2704E4C70012B274 /* AppDelegate.swift in Sources */,
 				B0C522E72729D5300038CF3B /* TripsViewController.swift in Sources */,

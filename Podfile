@@ -10,5 +10,5 @@ target 'semana7-b' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'SkeletonView'
-
+  pod 'Firebase/Storage'
 end
