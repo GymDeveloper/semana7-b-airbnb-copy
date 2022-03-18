@@ -18,11 +18,6 @@ class TripsViewController: UIViewController {
     
     let venueViewModel = VenueViewModel()
     
-    //    Paso 1 para yo poder obtener la ubicacion del usario debe pedir permisos, asi como tambien obtener 2 cosas su latitude y longitude
-    //    El archivo donde se piden permisos en info.plist
-    //    Una vez que el usuario ya me dio los permisos yo puedo acceder a su ubication
-    //    Para eso la librerio de apple llamanda corelocation
-    
     var locationManager: CLLocationManager?
     var userLocation: CLLocation?
     

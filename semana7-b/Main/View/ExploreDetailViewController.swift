@@ -55,8 +55,6 @@ class ExploreDetailViewController: UIViewController {
     
     @IBAction func onClickAddWish(_ sender: Any) {
         btnLiked.setImage(UIImage(named: "heart_like"), for: .normal)
-        // al darle click se debe agregar a nuestra lista de firestore
-        // recibe objeto de tipo array dictionary: [String: Any]
         let data: [String: Any] = [
             "name": name!,
             "address": address!,
@@ -70,7 +68,6 @@ class ExploreDetailViewController: UIViewController {
             if let err = err {
                 print("Err \(err.localizedDescription)")
             } else {
-//                creo una alerte de felicidades
                 let alert = UIAlertController(title: "Felicidades!", message: "Se agrego \(self.name!) a tu lista de deseos.", preferredStyle: .alert)
                 let action = UIAlertAction(title: "ok", style: .default) {_ in
                     self.dismiss(animated: true, completion: nil)
