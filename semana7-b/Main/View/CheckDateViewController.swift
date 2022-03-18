@@ -29,7 +29,6 @@ class CheckDateViewController: UIViewController {
     
     @IBAction func onClickCalendar(_ sender: Any) {
         print(datePicker.date)
-        // formato
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM dd"
         lblDate.text = dateFormatter.string(from: datePicker.date)
