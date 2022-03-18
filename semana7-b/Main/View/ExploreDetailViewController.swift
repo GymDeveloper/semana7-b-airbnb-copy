@@ -40,6 +40,10 @@ class ExploreDetailViewController: UIViewController {
         
         imageBG.addGestureRecognizer(actionImage)
         imageBG.isUserInteractionEnabled = true
+        setBtn()
+    }
+    
+    func setBtn() {
         btnLiked.setImage(UIImage(named: "heart"), for: .normal)
         btnLiked.setTitle("", for: .normal)
     }
